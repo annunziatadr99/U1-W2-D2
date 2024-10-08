@@ -3,25 +3,37 @@
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+const num1 = 14;
+const num2 = 7;
+
+console.log(num1 > num2);
 
 /* ESERCIZIO 2
   Scrivi un algoritmo che mostri "not equal" in console se un numero intero fornito è diverso da 5.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-
+if (num1 !== 5) {
+  console.log("not equal");
+} else {
+  console.log("great!");
+}
 /* ESERCIZIO 3
   Scrivi un algoritmo che mostri "divisibile per 5" in console se un numero fornito è perfettamente divisibile per 5 (suggerimento: usa l'operatore modulo)
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-
+console.log("15 è divisibile per 5", 15 % 5 === 0);
 /* ESERCIZIO 4
   Scrivi un algoritmo per verificare che, dati due numeri interi, il valore di uno di essi sia 8 oppure se la loro addizione/sottrazione sia uguale a 8.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-
+const num3 = 8;
+const num4 = 0;
+if (num3 === 8 || num4 === 8 || nem3 + num4 === 8 || num3 - num4 === 8) {
+  console.log("il valore è 8");
+}
 /* ESERCIZIO 5
   Stai lavorando su un sito di e-commerce. Stai salvando il saldo totale del carrello dell'utente in una variabile "totalShoppingCart".
   C'è una promozione in corso: se il totale del carrello supera 50, l'utente ha diritto alla spedizione gratuita (altrimenti la spedizione ha un costo fisso pari a 10).
@@ -44,10 +56,17 @@
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+let num5 = 5;
+let num6 = 6;
+let num7 = 9;
 
 /* ESERCIZIO 8
   Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
 */
+let a = 10;
+let b = "Maradona";
+let c = false;
+console.log(typeof 10, typeof "Maradona", typeof false);
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
@@ -56,6 +75,12 @@
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+let d = 13;
+if (d % 2 == 0) {
+  console.log((messaggio = d + "é pari"));
+} else {
+  console.log((messaggio = d + " è dispari"));
+}
 
 /* ESERCIZIO 10
   Modifica la logica del seguente algoritmo in modo che mostri in console il messaggio corretto in ogni circostanza.
@@ -76,10 +101,14 @@
 */
 
 const me = {
-  name: 'John',
-  lastName: 'Doe',
-  skills: ['javascript', 'html', 'css'],
-}
+  name: "John",
+  lastName: "Doe",
+  skills: ["javascript", "html", "css"],
+};
+console.log(me);
+
+me.city = "Toronto";
+console.log(me.city);
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
@@ -88,13 +117,15 @@ const me = {
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-
+delete me.lastName;
+console.log(me);
 /* ESERCIZIO 13
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere l'ultimo elemento della proprietà "skills".
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-
+me.skills.pop();
+console.log(me);
 /* ESERCIZIO 14
   Scrivi del codice per creare un array inizialmente vuoto. Riempilo successivamente con i numeri da 1 a 10.
 */
