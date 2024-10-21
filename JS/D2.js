@@ -42,6 +42,15 @@ if (num3 === 8 || num4 === 8 || nem3 + num4 === 8 || num3 - num4 === 8) {
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+let totalShoppingCart = 49;
+
+let ShippingCost = 0;
+if (totalShoppingCart <= 50) {
+  ShippingCost = 10;
+}
+let finalTotal = totalShoppingCart + ShippingCost;
+console.log(finalTotal);
+
 /* ESERCIZIO 6
   Stai lavorando su un sito di e-commerce. Oggi è il Black Friday e viene applicato il 20% su ogni prodotto.
   Modifica la risposta precedente includendo questa nuova promozione nell'algoritmo, determinando come prima se le spedizioni sono gratuite oppure no e e calcolando il totale.
