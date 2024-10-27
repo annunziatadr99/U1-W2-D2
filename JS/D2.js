@@ -65,9 +65,35 @@ console.log(finalTotal);
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-let num5 = 5;
-let num6 = 6;
-let num7 = 9;
+let num5 = 9;
+let num6 = 5;
+let num7 = 6;
+let minimo = 0;
+let medio = 0;
+let massimo = 0;
+
+if (num5 >= num6 && num5 >= num7) {
+  massimo = num5;
+} else if (num6 >= num5 && num6 >= num7) {
+  massimo = num6;
+} else {
+  massimo = num7;
+}
+console.log(massimo);
+
+if (num5 <= num6 && num5 <= num7) {
+  minimo = num5;
+} else if (num6 <= num5 && num6 <= num7) {
+  minimo = num6;
+} else {
+  minimo = num7;
+}
+console.log(minimo);
+
+medio = num5 + num6 + num7 - massimo - minimo;
+console.log(medio);
+
+console.log("Ordine decrescente:", massimo, medio, minimo);
 
 /* ESERCIZIO 8
   Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
@@ -104,6 +130,16 @@ if (d % 2 == 0) {
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+let val = 7;
+
+if (val < 5) {
+  console.log("Meno di 5");
+}
+if (val < 10) {
+  console.log("Meno di 10");
+} else {
+  console.log("Uguale a 10 o maggiore");
+}
 
 /* ESERCIZIO 11
   Fornito il seguente oggetto, scrivi del codice per aggiungere una proprietà "city", il cui valore sarà "Toronto".
@@ -133,7 +169,7 @@ console.log(me);
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-me.skills.pop();
+delete me.skills.pop();
 console.log(me);
 /* ESERCIZIO 14
   Scrivi del codice per creare un array inizialmente vuoto. Riempilo successivamente con i numeri da 1 a 10.
