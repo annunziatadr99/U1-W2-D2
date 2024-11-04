@@ -3,10 +3,13 @@
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-const num1 = 14;
-const num2 = 7;
-
-console.log(num1 > num2);
+const num1 = 6;
+const num2 = 12;
+if (num1 > num2) {
+  console.log("num1 è maggiore");
+} else {
+  console.log("num1 è minore");
+}
 
 /* ESERCIZIO 2
   Scrivi un algoritmo che mostri "not equal" in console se un numero intero fornito è diverso da 5.
@@ -23,16 +26,35 @@ if (num1 !== 5) {
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-console.log("15 è divisibile per 5", 15 % 5 === 0);
+const num = 25;
+if (num % 5 === 0) {
+  console.log("divisibile per 5");
+} else {
+  console.log("non è divisibile per 5");
+}
+
 /* ESERCIZIO 4
   Scrivi un algoritmo per verificare che, dati due numeri interi, il valore di uno di essi sia 8 oppure se la loro addizione/sottrazione sia uguale a 8.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-const num3 = 8;
-const num4 = 0;
-if (num3 === 8 || num4 === 8 || nem3 + num4 === 8 || num3 - num4 === 8) {
+const num3 = 16;
+const num4 = 8;
+if (num3 === 8 || num4 === 8 || num3 + num4 === 8 || num3 - num4 === 8) {
   console.log("il valore è 8");
+} else {
+  console.log("il valore non è 8");
+}
+// ------------ALTRO METODO--------------- //
+
+if (num3 === 8 || num4 === 8) {
+  console.log("uno dei due valori è 8");
+} else if (num3 + num4 === 8) {
+  console.log("l'addizione tra i due valori è 8");
+} else if (num3 - num4 === 8) {
+  console.log("la differenza tra i due valori è 8");
+} else {
+  console.log("nessun condizione è stata rispettata");
 }
 /* ESERCIZIO 5
   Stai lavorando su un sito di e-commerce. Stai salvando il saldo totale del carrello dell'utente in una variabile "totalShoppingCart".
@@ -50,11 +72,30 @@ if (totalShoppingCart <= 50) {
 }
 let finalTotal = totalShoppingCart + ShippingCost;
 console.log(finalTotal);
+//-------------- altro metodo-----------
+let totalShoppingCart2 = 47;
 
+let ShippingCost2 = 10;
+
+if (totalShoppingCart2 > 50) {
+  console.log("spedizione gratuita");
+} else {
+  let finalTotal2 = totalShoppingCart2 + ShippingCost2;
+  console.log("il totale è di" + " " + finalTotal2);
+}
 /* ESERCIZIO 6
   Stai lavorando su un sito di e-commerce. Oggi è il Black Friday e viene applicato il 20% su ogni prodotto.
   Modifica la risposta precedente includendo questa nuova promozione nell'algoritmo, determinando come prima se le spedizioni sono gratuite oppure no e e calcolando il totale.
 */
+let ShippingCost3 = 10;
+let totalShoppingCart3 = 37;
+totalShoppingCart3 = totalShoppingCart3 * 0.8;
+if (totalShoppingCart3 > 50) {
+  console.log("spedizione gratuita");
+} else {
+  let finalTotal3 = totalShoppingCart3 + ShippingCost3;
+  console.log("il totale è di" + " " + finalTotal3);
+}
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
