@@ -175,8 +175,7 @@ let val = 7;
 
 if (val < 5) {
   console.log("Meno di 5");
-}
-if (val < 10) {
+} else if (val < 10) {
   console.log("Meno di 10");
 } else {
   console.log("Uguale a 10 o maggiore");
@@ -210,8 +209,9 @@ console.log(me);
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-delete me.skills.pop();
+me.skills.pop();
 console.log(me);
+
 /* ESERCIZIO 14
   Scrivi del codice per creare un array inizialmente vuoto. Riempilo successivamente con i numeri da 1 a 10.
 */
